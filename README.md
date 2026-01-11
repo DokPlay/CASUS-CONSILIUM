@@ -1,115 +1,117 @@
-# CASUS CONSILIUM - Юридический сайт (Мадрид)
+[Русская инструкция](READMERU.md)
 
-## 🌐 Демо прототипа
+# CASUS CONSILIUM - Legal Website (Madrid)
+
+## 🌐 Prototype Demo
 
 
-## 📋 Описание проекта
-Мини-прототип адвокатского сайта для компании CASUS CONSILIUM в Мадриде. Разработан согласно техническому заданию.
+## 📋 Project Description
+A mini prototype of a law firm website for CASUS CONSILIUM in Madrid. Built according to the technical specification.
 
-## ✅ Реализованный функционал прототипа
+## ✅ Implemented Prototype Functionality
 
-### 1. Общие требования
-- [x] Mobile-first дизайн (адаптивная верстка)
-- [x] Сине-серая цветовая схема
-- [x] Бургер-меню для мобильных устройств
-- [x] Горизонтальное меню для десктопа
+### 1. General Requirements
+- [x] Mobile-first design (responsive layout)
+- [x] Blue-gray color scheme
+- [x] Burger menu for mobile devices
+- [x] Horizontal menu for desktop
 
-### 2. Мультиязычность
-- [x] Испанский (ES)
-- [x] Английский (EN)
-- [x] Русский (RU)
-- [x] Переключатель языков в хедере
-- [x] Полный перевод всего контента
+### 2. Multilingual Support
+- [x] Spanish (ES)
+- [x] English (EN)
+- [x] Russian (RU)
+- [x] Language switcher in the header
+- [x] Full translation of all content
 
-### 3. Хедер
-- [x] Логотип "CASUS CONSILIUM" Madrid
-- [x] Адрес (ссылка на Google Maps)
-- [x] Телефон (клик для звонка)
-- [x] Email (клик для письма)
-- [x] WhatsApp и Telegram ссылки
-- [x] Меню с 6 услугами
+### 3. Header
+- [x] "CASUS CONSILIUM" Madrid logo
+- [x] Address (link to Google Maps)
+- [x] Phone (click to call)
+- [x] Email (click to send)
+- [x] WhatsApp and Telegram links
+- [x] Menu with 6 services
 
-### 4. Главная страница
-- [x] Hero-секция с фото Мадрида
-- [x] Блок "О нас" с преимуществами
-- [x] Статистика (цена от 1000€, 99% успех, 15+ лет)
-- [x] Галерея команды (иконки)
-- [x] 6 карточек услуг
-- [x] Успешные кейсы
-- [x] Отзывы клиентов
-- [x] Контактная форма
+### 4. Home Page
+- [x] Hero section with a Madrid photo
+- [x] "About us" block with advantages
+- [x] Statistics (from €1000, 99% success, 15+ years)
+- [x] Team gallery (icons)
+- [x] 6 service cards
+- [x] Successful cases
+- [x] Client testimonials
+- [x] Contact form
 - [x] Google Maps
 
-### 5. Услуги (модальные окна)
-- [x] Юридические услуги
-- [x] Бухгалтерские услуги
-- [x] Финансовый консультант
-- [x] Адвокаты
-- [x] Агентство недвижимости
-- [x] Архитекторы-проектировщики-дизайнеры
+### 5. Services (Modal Windows)
+- [x] Legal services
+- [x] Accounting services
+- [x] Financial consultant
+- [x] Lawyers
+- [x] Real estate agency
+- [x] Architects-designers-project planners
 
-### 6. Формы заявки
-- [x] Имя, телефон, email
-- [x] Выбор услуги (автозаполнение)
-- [x] Предпочтительный способ связи
-- [x] Язык общения
-- [x] Описание вопроса
-- [x] Модальное окно "Спасибо" после отправки
+### 6. Application Forms
+- [x] Name, phone, email
+- [x] Service selection (auto-fill)
+- [x] Preferred contact method
+- [x] Communication language
+- [x] Issue description
+- [x] "Thank you" modal after submission
 
-### 7. Футер
-- [x] Контактная информация
-- [x] Список услуг
-- [x] QR-код для визиток
-- [x] Копирайт
-- [x] Дисклеймер
+### 7. Footer
+- [x] Contact information
+- [x] Services list
+- [x] QR code for business cards
+- [x] Copyright
+- [x] Disclaimer
 
-### 8. Дополнительно
-- [x] Фиксированная кнопка звонка (мобильная версия)
-- [x] Плавные анимации
+### 8. Additional
+- [x] Fixed call button (mobile version)
+- [x] Smooth animations
 
-## 🔧 Технологии
+## 🔧 Technologies
 - **Framework:** Hono (TypeScript)
 - **Styling:** Tailwind CSS (CDN)
 - **Icons:** Font Awesome
 - **Fonts:** Playfair Display, Inter (Google Fonts)
-- **Hosting:** Cloudflare Pages (готово к деплою)
+- **Hosting:** Cloudflare Pages (ready for deployment)
 
-## 📁 Структура проекта
+## 📁 Project Structure
 ```
 webapp/
 ├── src/
-│   └── index.tsx      # Основной код приложения
-├── dist/              # Собранные файлы
-├── ecosystem.config.cjs  # PM2 конфигурация
+│   └── index.tsx      # Main application code
+├── dist/              # Built files
+├── ecosystem.config.cjs  # PM2 configuration
 ├── package.json
 ├── vite.config.ts
 └── wrangler.jsonc
 ```
 
-## 🚀 Запуск локально
+## 🚀 Run Locally
 ```bash
 npm install
 npm run build
 npm run preview
 ```
 
-## ☁️ Деплой на Cloudflare
+## ☁️ Deploy to Cloudflare
 ```bash
 npm run build
 npx wrangler pages deploy dist --project-name casus-consilium
 ```
 
-## 📝 Что НЕ реализовано в прототипе (для полной версии)
-- [ ] reCAPTCHA защита форм
-- [ ] Google Analytics и GTM
-- [ ] Отправка форм на email
-- [ ] Отдельные страницы для каждой услуги
-- [ ] Блог/FAQ раздел
-- [ ] Privacy Policy страница
-- [ ] SEO оптимизация alt-тегов
-- [ ] Реальные фото команды
-- [ ] Реальные контактные данные
-- [ ] Скачивание QR-кода в PNG/SVG
+## 📝 Not Implemented in the Prototype (for full version)
+- [ ] reCAPTCHA form protection
+- [ ] Google Analytics and GTM
+- [ ] Email form submissions
+- [ ] Separate pages for each service
+- [ ] Blog/FAQ section
+- [ ] Privacy Policy page
+- [ ] SEO optimization for alt tags
+- [ ] Real team photos
+- [ ] Real contact details
+- [ ] Download QR code in PNG/SVG
 
 ---
-*Прототип создан для демонстрации дизайна и структуры заказчику*
+*Prototype created to demonstrate the design and structure to the client*
