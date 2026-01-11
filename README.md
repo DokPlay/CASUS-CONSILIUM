@@ -3,6 +3,7 @@
 # CASUS CONSILIUM - Legal Website (Madrid)
 
 ## 🌐 Prototype Demo
+<img width="1949" height="1229" alt="Снимок экрана 2026-01-11 150258" src="https://github.com/user-attachments/assets/f080a9e9-9ac2-42c1-96e7-7f869b10865e" />
 
 
 ## 📋 Project Description
